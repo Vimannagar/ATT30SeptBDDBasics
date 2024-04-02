@@ -15,7 +15,7 @@ public class HomePage {
 	@FindBy(xpath = "//*[@class='page-header']//*[normalize-space(text())='Sign In']")
 	private WebElement signinlink;
 
-	@FindBy(xpath = "//*[@id='search']")
+	@FindBy(xpath = "//*[@id='search123']")
 	private WebElement searchField;
 
 	@FindBy(xpath = "//button[@type='submit' and @title='Search']")
