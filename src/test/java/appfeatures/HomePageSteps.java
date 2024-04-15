@@ -8,13 +8,14 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pages.HomePage;
 import qa.DriverFactory;
+import qa.DriverFactory2;
 
 public class HomePageSteps {
-	HomePage homePage = new HomePage(DriverFactory.getDriver());
+	HomePage homePage = new HomePage(DriverFactory2.getDriver());
 	
 	@Given("I am at home page")
 	public void i_am_at_home_page() {
-	   WebDriver driver = DriverFactory.getDriver();
+	   WebDriver driver = DriverFactory2.getDriver();
 		driver.get("https://magento.softwaretestingboard.com/");
 	}
 

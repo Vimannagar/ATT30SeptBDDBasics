@@ -5,7 +5,7 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
 		
-		features = {"src\\test\\resources\\appfeatures"},
+		features = {"classpath:appfeatures"},
 		
 		glue = {"appfeatures"},
 		

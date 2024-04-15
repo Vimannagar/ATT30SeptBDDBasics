@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="128.607" tests="2" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/home/seleniumtestframework/target/test-classes:/home/seleniumtestframework/target/classes:/root/.m2/repository/io/cucumber/cucumber-java/7.14.0/cucumber-java-7.14.0.jar:/root/.m2/repository/io/cucumber/cucumber-core/7.14.0/cucumber-core-7.14.0.jar:/root/.m2/repository/io/cucumber/cucumber-gherkin/7.14.0/cucumber-gherkin-7.14.0.jar:/root/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.14.0/cucumber-gherkin-messages-7.14.0.jar:/root/.m2/repository/io/cucumber/gherkin/26.2.0/gherkin-26.2.0.jar:/root/.m2/repository/io/cucumber/messages/22.0.0/messages-22.0.0.jar:/root/.m2/repository/io/cucumber/tag-expressions/5.0.6/tag-expressions-5.0.6.jar:/root/.m2/repository/io/cucumber/cucumber-expressions/16.1.2/cucumber-expressions-16.1.2.jar:/root/.m2/repository/io/cucumber/datatable/7.14.0/datatable-7.14.0.jar:/root/.m2/repository/io/cucumber/cucumber-plugin/7.14.0/cucumber-plugin-7.14.0.jar:/root/.m2/repository/io/cucumber/docstring/7.14.0/docstring-7.14.0.jar:/root/.m2/repository/io/cucumber/html-formatter/20.4.0/html-formatter-20.4.0.jar:/root/.m2/repository/io/cucumber/junit-xml-formatter/0.2.0/junit-xml-formatter-0.2.0.jar:/root/.m2/repository/io/cucumber/ci-environment/9.2.0/ci-environment-9.2.0.jar:/root/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/root/.m2/repository/org/testng/testng/7.7.1/testng-7.7.1.jar:/root/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/root/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/root/.m2/repository/org/webjars/jquery/3.6.1/jquery-3.6.1.jar:/root/.m2/repository/io/cucumber/cucumber-testng/7.14.0/cucumber-testng-7.14.0.jar:/root/.m2/repository/org/seleniumhq/selenium/selenium-java/4.14.0/selenium-java-4.14.0.jar:/root/.m2/repository/org/seleniumhq/selenium/selenium-api/4.14.0/selenium-api-4.14.0.jar:/root/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.14.0/selenium-chrome-driver-4.14.0.jar:/root/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/root/.m2/repository/com/google/guava/guava/32.1.2-jre/guava-32.1.2-jre.jar:/root/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/root/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/root/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/root/.m2/repository/org/checkerframework/checker-qual/3.33.0/checker-qual-3.33.0.jar:/root/.m2/repository/com/google/errorprone/error_prone_annotations/2.18.0/error_prone_annotations-2.18.0.jar:/root/.m2/repository/com/google/j2objc/j2objc-annotations/2.8/j2objc-annotations-2.8.jar:/root/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.14.0/selenium-chromium-driver-4.14.0.jar:/root/.m2/repository/org/seleniumhq/selenium/selenium-json/4.14.0/selenium-json-4.14.0.jar:/root/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.14.0/selenium-manager-4.14.0.jar:/root/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v116/4.14.0/selenium-devtools-v116-4.14.0.jar:/root/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v117/4.14.0/selenium-devtools-v117-4.14.0.jar:/root/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v118/4.14.0/selenium-devtools-v118-4.14.0.jar:/root/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.14.0/selenium-devtools-v85-4.14.0.jar:/root/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.14.0/selenium-edge-driver-4.14.0.jar:/root/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.14.0/selenium-firefox-driver-4.14.0.jar:/root/.m2/repository/org/seleniumhq/selenium/selenium-http/4.14.0/selenium-http-4.14.0.jar:/root/.m2/repository/dev/failsafe/failsafe/3.3.2/failsafe-3.3.2.jar:/root/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.14.0/selenium-ie-driver-4.14.0.jar:/root/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.14.0/selenium-remote-driver-4.14.0.jar:/root/.m2/repository/io/opentelemetry/opentelemetry-api/1.28.0/opentelemetry-api-1.28.0.jar:/root/.m2/repository/io/opentelemetry/opentelemetry-context/1.28.0/opentelemetry-context-1.28.0.jar:/root/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.28.0/opentelemetry-exporter-logging-1.28.0.jar:/root/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.28.0/opentelemetry-sdk-metrics-1.28.0.jar:/root/.m2/repository/io/opentelemetry/opentelemetry-extension-incubator/1.28.0-alpha/opentelemetry-extension-incubator-1.28.0-alpha.jar:/root/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.28.0/opentelemetry-sdk-logs-1.28.0.jar:/root/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.28.0/opentelemetry-sdk-common-1.28.0.jar:/root/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.28.0/opentelemetry-sdk-extension-autoconfigure-spi-1.28.0.jar:/root/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.28.0/opentelemetry-sdk-extension-autoconfigure-1.28.0.jar:/root/.m2/repository/io/opentelemetry/opentelemetry-api-events/1.28.0-alpha/opentelemetry-api-events-1.28.0-alpha.jar:/root/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.28.0/opentelemetry-sdk-trace-1.28.0.jar:/root/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.28.0/opentelemetry-sdk-1.28.0.jar:/root/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.28.0-alpha/opentelemetry-semconv-1.28.0-alpha.jar:/root/.m2/repository/net/bytebuddy/byte-buddy/1.14.5/byte-buddy-1.14.5.jar:/root/.m2/repository/org/seleniumhq/selenium/selenium-os/4.14.0/selenium-os-4.14.0.jar:/root/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/root/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.14.0/selenium-safari-driver-4.14.0.jar:/root/.m2/repository/org/seleniumhq/selenium/selenium-support/4.14.0/selenium-support-4.14.0.jar:/root/.m2/repository/io/cucumber/cucumber-picocontainer/7.14.0/cucumber-picocontainer-7.14.0.jar:/root/.m2/repository/org/picocontainer/picocontainer/2.15/picocontainer-2.15.jar:"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="GMT"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Linux"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="/opt/java/openjdk/lib"/>
+    <property name="sun.java.command" value="/home/seleniumtestframework/target/surefire/surefirebooter-20240412155718807_3.jar /home/seleniumtestframework/target/surefire 2024-04-12T15-57-07_205-jvmRun1 surefire-20240412155718807_1tmp surefire_0-20240412155718807_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/home/seleniumtestframework/target/test-classes:/home/seleniumtestframework/target/classes:/root/.m2/repository/io/cucumber/cucumber-java/7.14.0/cucumber-java-7.14.0.jar:/root/.m2/repository/io/cucumber/cucumber-core/7.14.0/cucumber-core-7.14.0.jar:/root/.m2/repository/io/cucumber/cucumber-gherkin/7.14.0/cucumber-gherkin-7.14.0.jar:/root/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.14.0/cucumber-gherkin-messages-7.14.0.jar:/root/.m2/repository/io/cucumber/gherkin/26.2.0/gherkin-26.2.0.jar:/root/.m2/repository/io/cucumber/messages/22.0.0/messages-22.0.0.jar:/root/.m2/repository/io/cucumber/tag-expressions/5.0.6/tag-expressions-5.0.6.jar:/root/.m2/repository/io/cucumber/cucumber-expressions/16.1.2/cucumber-expressions-16.1.2.jar:/root/.m2/repository/io/cucumber/datatable/7.14.0/datatable-7.14.0.jar:/root/.m2/repository/io/cucumber/cucumber-plugin/7.14.0/cucumber-plugin-7.14.0.jar:/root/.m2/repository/io/cucumber/docstring/7.14.0/docstring-7.14.0.jar:/root/.m2/repository/io/cucumber/html-formatter/20.4.0/html-formatter-20.4.0.jar:/root/.m2/repository/io/cucumber/junit-xml-formatter/0.2.0/junit-xml-formatter-0.2.0.jar:/root/.m2/repository/io/cucumber/ci-environment/9.2.0/ci-environment-9.2.0.jar:/root/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/root/.m2/repository/org/testng/testng/7.7.1/testng-7.7.1.jar:/root/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/root/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/root/.m2/repository/org/webjars/jquery/3.6.1/jquery-3.6.1.jar:/root/.m2/repository/io/cucumber/cucumber-testng/7.14.0/cucumber-testng-7.14.0.jar:/root/.m2/repository/org/seleniumhq/selenium/selenium-java/4.14.0/selenium-java-4.14.0.jar:/root/.m2/repository/org/seleniumhq/selenium/selenium-api/4.14.0/selenium-api-4.14.0.jar:/root/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.14.0/selenium-chrome-driver-4.14.0.jar:/root/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/root/.m2/repository/com/google/guava/guava/32.1.2-jre/guava-32.1.2-jre.jar:/root/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/root/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/root/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/root/.m2/repository/org/checkerframework/checker-qual/3.33.0/checker-qual-3.33.0.jar:/root/.m2/repository/com/google/errorprone/error_prone_annotations/2.18.0/error_prone_annotations-2.18.0.jar:/root/.m2/repository/com/google/j2objc/j2objc-annotations/2.8/j2objc-annotations-2.8.jar:/root/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.14.0/selenium-chromium-driver-4.14.0.jar:/root/.m2/repository/org/seleniumhq/selenium/selenium-json/4.14.0/selenium-json-4.14.0.jar:/root/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.14.0/selenium-manager-4.14.0.jar:/root/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v116/4.14.0/selenium-devtools-v116-4.14.0.jar:/root/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v117/4.14.0/selenium-devtools-v117-4.14.0.jar:/root/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v118/4.14.0/selenium-devtools-v118-4.14.0.jar:/root/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.14.0/selenium-devtools-v85-4.14.0.jar:/root/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.14.0/selenium-edge-driver-4.14.0.jar:/root/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.14.0/selenium-firefox-driver-4.14.0.jar:/root/.m2/repository/org/seleniumhq/selenium/selenium-http/4.14.0/selenium-http-4.14.0.jar:/root/.m2/repository/dev/failsafe/failsafe/3.3.2/failsafe-3.3.2.jar:/root/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.14.0/selenium-ie-driver-4.14.0.jar:/root/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.14.0/selenium-remote-driver-4.14.0.jar:/root/.m2/repository/io/opentelemetry/opentelemetry-api/1.28.0/opentelemetry-api-1.28.0.jar:/root/.m2/repository/io/opentelemetry/opentelemetry-context/1.28.0/opentelemetry-context-1.28.0.jar:/root/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.28.0/opentelemetry-exporter-logging-1.28.0.jar:/root/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.28.0/opentelemetry-sdk-metrics-1.28.0.jar:/root/.m2/repository/io/opentelemetry/opentelemetry-extension-incubator/1.28.0-alpha/opentelemetry-extension-incubator-1.28.0-alpha.jar:/root/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.28.0/opentelemetry-sdk-logs-1.28.0.jar:/root/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.28.0/opentelemetry-sdk-common-1.28.0.jar:/root/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.28.0/opentelemetry-sdk-extension-autoconfigure-spi-1.28.0.jar:/root/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.28.0/opentelemetry-sdk-extension-autoconfigure-1.28.0.jar:/root/.m2/repository/io/opentelemetry/opentelemetry-api-events/1.28.0-alpha/opentelemetry-api-events-1.28.0-alpha.jar:/root/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.28.0/opentelemetry-sdk-trace-1.28.0.jar:/root/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.28.0/opentelemetry-sdk-1.28.0.jar:/root/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.28.0-alpha/opentelemetry-semconv-1.28.0-alpha.jar:/root/.m2/repository/net/bytebuddy/byte-buddy/1.14.5/byte-buddy-1.14.5.jar:/root/.m2/repository/org/seleniumhq/selenium/selenium-os/4.14.0/selenium-os-4.14.0.jar:/root/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/root/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.14.0/selenium-safari-driver-4.14.0.jar:/root/.m2/repository/org/seleniumhq/selenium/selenium-support/4.14.0/selenium-support-4.14.0.jar:/root/.m2/repository/io/cucumber/cucumber-picocontainer/7.14.0/cucumber-picocontainer-7.14.0.jar:/root/.m2/repository/org/picocontainer/picocontainer/2.15/picocontainer-2.15.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/root"/>
+    <property name="user.language" value="en"/>
+    <property name="clibrowser" value="Chrome"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-01-16"/>
+    <property name="java.home" value="/opt/java/openjdk"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/home/seleniumtestframework"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/home/seleniumtestframework/target/surefire/surefirebooter-20240412155718807_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.22+7"/>
+    <property name="user.name" value="root"/>
+    <property name="path.separator" value=":"/>
+    <property name="otel.metrics.exporter" value="none"/>
+    <property name="os.version" value="5.15.146.1-microsoft-standard-WSL2"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="otel.traces.exporter" value="none"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-11.0.22+7"/>
+    <property name="localRepository" value="/root/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="otel.logs.exporter" value="none"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="11.0.22"/>
+    <property name="user.dir" value="/home/seleniumtestframework"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/opt/java/openjdk/lib/server:/opt/java/openjdk/lib:/opt/java/openjdk/../lib:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="11.0.22+7"/>
+    <property name="java.specification.maintenance.version" value="2"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="runScenario[&quot;validation of signin link&quot;, &quot;Homepage functionality&quot;](1)" classname="appfeatures.MagnetoRunnerTest" time="56.529">
+    <system-out><![CDATA[
+@functional
+Scenario: validation of signin link     &amp#27;[90m# appfeatures/Homepage.feature:8&amp#27;[0m
+Chrome
+null
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI am at home page&amp#27;[0m               &amp#27;[90m# appfeatures.HomePageSteps.i_am_at_home_page()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mI should see signin link on page&amp#27;[0m &amp#27;[90m# appfeatures.HomePageSteps.i_should_see_signin_link_on_page()&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Apr 12, 2024 3:57:46 PM org.openqa.selenium.remote.tracing.opentelemetry.OpenTelemetryTracer createTracer
+INFO: Using OpenTelemetry for tracing
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;search product&quot;, &quot;Homepage functionality&quot;](2)" classname="appfeatures.MagnetoRunnerTest" time="33.068">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;search123&apos;]&quot;}&#10;  (Session info: chrome=123.0.6312.86)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception&#10;Build info: version: &apos;4.14.0&apos;, revision: &apos;e5a96349ce&apos;&#10;System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.146.1-microsoft-standard-WSL2&apos;, java.version: &apos;11.0.22&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Command: [a929288c73734e71842e4f9efc7332f1, findElement {using=xpath, value=//*[@id=&apos;search123&apos;]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.86, chrome: {chromedriverVersion: 123.0.6312.86 (9b72c47a0536..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:39873}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.20.0.3:4444/sessio..., se:cdpVersion: 123.0.6312.86, se:vnc: ws://172.20.0.3:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.20.0.3:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a929288c73734e71842e4f9efc7332f1" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='search123']"}
+  (Session info: chrome=123.0.6312.86)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.14.0', revision: 'e5a96349ce'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.146.1-microsoft-standard-WSL2', java.version: '11.0.22'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [a929288c73734e71842e4f9efc7332f1, findElement {using=xpath, value=//*[@id='search123']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.86, chrome: {chromedriverVersion: 123.0.6312.86 (9b72c47a0536..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:39873}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.20.0.3:4444/sessio..., se:cdpVersion: 123.0.6312.86, se:vnc: ws://172.20.0.3:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.20.0.3:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a929288c73734e71842e4f9efc7332f1
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy21.sendKeys(Unknown Source)
+	at pages.HomePage.searchProduct(HomePage.java:48)
+	at appfeatures.HomePageSteps.i_search_for_text(HomePageSteps.java:39)
+	at ✽.I search for text "jacket"(classpath:appfeatures/Homepage.feature:15)
+]]></failure>
+    <system-out><![CDATA[
+@functional
+Scenario: search product                 &amp#27;[90m# appfeatures/Homepage.feature:13&amp#27;[0m
+Chrome
+null
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI am at home page&amp#27;[0m                &amp#27;[90m# appfeatures.HomePageSteps.i_am_at_home_page()&amp#27;[0m
+  &amp#27;[31mWhen &amp#27;[0m&amp#27;[31mI search for text &amp#27;[0m&amp#27;[31m&amp#27;[1m"jacket"&amp#27;[0m        &amp#27;[90m# appfeatures.HomePageSteps.i_search_for_text(java.lang.String)&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='search123']"}
+  (Session info: chrome=123.0.6312.86)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.14.0', revision: 'e5a96349ce'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.146.1-microsoft-standard-WSL2', java.version: '11.0.22'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [a929288c73734e71842e4f9efc7332f1, findElement {using=xpath, value=//*[@id='search123']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.86, chrome: {chromedriverVersion: 123.0.6312.86 (9b72c47a0536..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:39873}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.20.0.3:4444/sessio..., se:cdpVersion: 123.0.6312.86, se:vnc: ws://172.20.0.3:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.20.0.3:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a929288c73734e71842e4f9efc7332f1
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy21.sendKeys(Unknown Source)
+	at pages.HomePage.searchProduct(HomePage.java:48)
+	at appfeatures.HomePageSteps.i_search_for_text(HomePageSteps.java:39)
+	at ✽.I search for text "jacket"(classpath:appfeatures/Homepage.feature:15)
+&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mI should navigate to results page&amp#27;[0m &amp#27;[90m# appfeatures.HomePageSteps.i_should_navigate_to_results_page()&amp#27;[0m
+
+    Embedding search_product [image/png 574945 bytes]
+
+]]></system-out>
+  </testcase>
+</testsuite>

@@ -5,23 +5,34 @@ agent any
 
 stages
 {
-	stage('Fetching the code from git')
+	stage('Building the image')
 	{
 	steps
 	{
-		git 'https://github.com/Vimannagar/ATT30SeptBDDBasics.git'
+		bat 'docker build -t=cucumbertestframeworkimage .'
 	}
 	}
 
-	stage('Executing the project on Chrome Browser')
+	stage('Making infra up for execution')
 	{
 	steps
 	{
-		bat "mvn -Dmaven.test.failure.ignore=true clean test -Dclibrowser=Chrome"
+		bat "docker-compose up selenium-hub chrome"
 	}
+}
+stage('Executing the cucumber test cases')
+	{
+	steps
+	{
+		bat "docker-compose up cucumbertestframeworkimage"
+	}
+
+
+
+
  post { 
         always { 
-            emailext attachLog: true, attachmentsPattern: 'target/cucumber-reports/reports.html', body: '''Hi Team,
+            emailext attachLog: true, attachmentsPattern: 'chrometestreports/cucumber-reports/reports.html', body: '''Hi Team,
 <h1>Here is the execution details of the build using script.</h1>
 
 <p>$PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS<br>
@@ -35,33 +46,9 @@ ATT 30Sept batch''', subject: '$PROJECT_NAME - Build # $BUILD_NUMBER - Report fo
 
 	}
 
-	stage('Executing the project on Firefox Browser')
-	{
-	steps
-	{
-		bat "mvn -Dmaven.test.failure.ignore=true clean test -Dclibrowser=Firefox"
-	}
-
-	 post { 
-        always { 
-            emailext attachLog: true, attachmentsPattern: 'target/cucumber-reports/reports.html', body: '''Hi Team,
-<h1>Here is the execution details of the build using script.</h1>
-
-<p>$PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS<br>
-
-Check console output at $BUILD_URL to view the results.<br>
-
-Thanks,<br>
-ATT 30Sept batch''', subject: '$PROJECT_NAME - Build # $BUILD_NUMBER - Report for Firefox browser - Customized email notification', to: 'attevening@gmail.com'
-        }
-    }
-
-
-	}
-
-   
 	
-}
 
+
+}
 
 }

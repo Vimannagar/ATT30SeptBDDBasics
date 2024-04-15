@@ -1,0 +1,5 @@
+qa/DriverFactory.class
+qa/DriverFactory2.class
+pages/ProductPage.class
+pages/Test.class
+pages/HomePage.class

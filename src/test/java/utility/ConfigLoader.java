@@ -9,7 +9,7 @@ public class ConfigLoader {
 	public static String readConfigData(String data) throws IOException {
 		Properties prop = new Properties();
 
-		String path = System.getProperty("user.dir") + "\\src\\test\\resources\\Config.properties";
+		String path = System.getProperty("user.dir") + "//src//test//resources//Config.properties";
 
 		FileInputStream fis = new FileInputStream(path);
 
