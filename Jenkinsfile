@@ -24,7 +24,7 @@ stage('Executing the cucumber test cases')
 	{
 	steps
 	{
-		bat "docker-compose up cucumbertestframeworkimage"
+		bat "docker-compose up cucumber-chrome-testcases"
 	}
 
 
