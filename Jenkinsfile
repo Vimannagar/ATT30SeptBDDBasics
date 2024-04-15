@@ -17,7 +17,7 @@ stages
 	{
 	steps
 	{
-		bat "docker-compose up -d selenium-hub chrome"
+		bat "docker-compose up -d hub chrome"
 	}
 }
 stage('Executing the cucumber test cases')
