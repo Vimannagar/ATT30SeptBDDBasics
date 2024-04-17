@@ -11,11 +11,11 @@ import qa.DriverFactory;
 import qa.DriverFactory2;
 
 public class HomePageSteps {
-	HomePage homePage = new HomePage(DriverFactory2.getDriver());
+	HomePage homePage = new HomePage(DriverFactory.getDriver());
 	
 	@Given("I am at home page")
 	public void i_am_at_home_page() {
-	   WebDriver driver = DriverFactory2.getDriver();
+	   WebDriver driver = DriverFactory.getDriver();
 		driver.get("https://magento.softwaretestingboard.com/");
 	}
 
