@@ -6,6 +6,13 @@ agent any
 stages
 {
 
+	stage('making infra ready')
+	{
+	steps
+	{
+		sh "docker-compose up -d hub chrome"
+	}
+	}
 	stage('Execute the test cases')
 	{
 	steps
