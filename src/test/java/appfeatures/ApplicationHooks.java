@@ -14,14 +14,14 @@ import qa.DriverFactory2;
 import utility.ConfigLoader;
 
 public class ApplicationHooks {
-	DriverFactory df;
+	DriverFactory2 df;
 	
 	WebDriver driver;
 	
 	@Before
 	public void launchBrowser() throws IOException
 	{
-		df = new DriverFactory();
+		df = new DriverFactory2();
 		
 		String configBrowser = ConfigLoader.readConfigData("browser");
 		
