@@ -5,25 +5,34 @@ agent any
 
 stages
 {
-	stage('Preparing the infrastructure')
+	stage('Building the image')
 	{
 	steps
 	{
-		sh "docker-compose up -d hub chrome firefox"
+		bat 'docker build -t=cucumbertestframeworkimage .'
 	}
 	}
 
-	stage('Execute the test cases')
+	stage('Making infra up for execution')
 	{
 	steps
 	{
-		sh "mvn -Dmaven.test.failure.ignore=true clean test"
+		bat "docker-compose up -d hub chrome"
 	}
+}
+stage('Executing the cucumber test cases')
+	{
+	steps
+	{
+		bat "docker-compose up cucumber-chrome-testcases"
+	}
+
+
 
 
  post { 
         always { 
-            emailext attachLog: true, attachmentsPattern: 'target/cucumber-reports/reports.html', body: '''Hi Team,
+            emailext attachLog: true, attachmentsPattern: 'chrometestreports/cucumber-reports/reports.html', body: '''Hi Team,
 <h1>Here is the execution details of the build using script.</h1>
 
 <p>$PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS<br>
@@ -34,13 +43,12 @@ Thanks,<br>
 ATT 30Sept batch''', subject: '$PROJECT_NAME - Build # $BUILD_NUMBER - Report for Chrome Browser - Customized email notification', to: 'attevening@gmail.com'
         }
     }
-    }
 
 	}
 
 	
 
 
-
+}
 
 }
