@@ -36,6 +36,14 @@ ATT 30Sept batch''', subject: '$PROJECT_NAME - Build # $BUILD_NUMBER - Report fo
     }
     }
 
+    stage('Making infra down')
+	{
+	steps
+	{
+		sh "docker-compose down -d hub chrome firefox"
+	}
+	}
+
 	}
 
 	
