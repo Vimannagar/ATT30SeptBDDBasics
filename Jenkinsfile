@@ -40,7 +40,7 @@ ATT 30Sept batch''', subject: '$PROJECT_NAME - Build # $BUILD_NUMBER - Report fo
 	{
 	steps
 	{
-		sh "docker-compose down -d hub chrome firefox"
+		sh "docker-compose down"
 	}
 	}
 
