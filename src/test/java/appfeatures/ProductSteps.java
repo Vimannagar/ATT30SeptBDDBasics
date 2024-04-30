@@ -5,10 +5,10 @@ import org.testng.Assert;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pages.ProductPage;
-import qa.DriverFactory2;
+import qa.DriverFactory;
 
 public class ProductSteps {
-	ProductPage product = new ProductPage(DriverFactory2.getDriver());
+	ProductPage product = new ProductPage(DriverFactory.getDriver());
 	
 	@When("I click on Men")
 	public void i_click_on() {
